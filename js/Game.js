@@ -26,7 +26,12 @@
              new Phrase("Panos and the big fat mouse"),
              new Phrase("Panos and vasilis are playing fortnite"),
              new Phrase("Santa Clause is fat"),
-             new Phrase("My iPhone"),
+             new Phrase("Baby is a black and white cat"),
+             new Phrase("Panos has a nintendo switch"),
+             new Phrase("Merry christmas and a happy new year"),
+             new Phrase("Roxie is a stupid dog"),
+             new Phrase("My name is Panos"),
+             new Phrase("My brothers name is vasilis"),
          ];
 
          return phrases;
