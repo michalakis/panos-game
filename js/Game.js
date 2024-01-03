@@ -32,6 +32,7 @@
              new Phrase("Roxie is a stupid dog"),
              new Phrase("My name is Panos"),
              new Phrase("My brothers name is vasilis"),
+             new Phrase("Apoel thrillos"),
          ];
 
          return phrases;
