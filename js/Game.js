@@ -38,19 +38,19 @@
     * @return {Object} Phrase object chosen to be used
     */
     getRandomPhrase() {
-        console.log(this.phrases, this.phrases.length)
+        //console.log(this.phrases, this.phrases.length)
         if(!this.phrases.length) {
-            this.createPhrases()
+            this.phrases = this.createPhrases()
         }
         const index = Math.floor(Math.random() * this.phrases.length);
 
-        console.log(index)
+        //console.log(index)
 
         const phrase = this.phrases[index];
-        console.log(phrase)
+        //console.log(phrase)
 
         this.phrases.splice(index, 1)
-        console.log(this.phrases, this.phrases.length)
+        //console.log(this.phrases, this.phrases.length)
 
         return phrase;
     };
