@@ -14,28 +14,23 @@
     * @return {array} An array of phrases that could be used in the game
     */
      createPhrases() {
-         const phrases = [
-            /*new Phrase("You cant handle the truth"),
-            new Phrase("I ll be back"),
-            new Phrase("Merry Christmas you filthy animal"),
-            new Phrase("Luke I am your father"),
-            new Phrase("Frankly my dear I dont give a damn"), */
+        return [
             new Phrase("Happy Happy Banana Cat"),
-             new Phrase("Ronaldo vs Messi"),
-             new Phrase("My dog is blue"),
-             new Phrase("Panos and the big fat mouse"),
-             new Phrase("Panos and vasilis are playing fortnite"),
-             new Phrase("Santa Clause is fat"),
-             new Phrase("Baby is a black and white cat"),
-             new Phrase("Panos has a nintendo switch"),
-             new Phrase("Merry christmas and a happy new year"),
-             new Phrase("Roxie is a stupid dog"),
-             new Phrase("My name is Panos"),
-             new Phrase("My brothers name is vasilis"),
-             new Phrase("Apoel thrillos"),
-         ];
-
-         return phrases;
+            new Phrase("Ronaldo vs Messi"),
+            new Phrase("My dog is blue"),
+            new Phrase("Panos and the big fat mouse"),
+            new Phrase("Panos and vasilis are playing fortnite"),
+            new Phrase("Santa Clause is fat"),
+            new Phrase("Baby is a black and white cat"),
+            new Phrase("Panos has a nintendo switch"),
+            new Phrase("Merry christmas and a happy new year"),
+            new Phrase("Roxie is a stupid dog"),
+            new Phrase("My name is Panos"),
+            new Phrase("My brothers name is vasilis"),
+            new Phrase("Apoel thrillos"),
+            new Phrase("Anorthosi Protathlima re pano"),
+            new Phrase("You are a cucumber")
+        ];
      }
 
     /**
@@ -43,14 +38,19 @@
     * @return {Object} Phrase object chosen to be used
     */
     getRandomPhrase() {
+        console.log(this.phrases, this.phrases.length)
         if(!this.phrases.length) {
             this.createPhrases()
         }
         const index = Math.floor(Math.random() * this.phrases.length);
 
+        console.log(index)
+
         const phrase = this.phrases[index];
+        console.log(phrase)
 
         this.phrases.splice(index, 1)
+        console.log(this.phrases, this.phrases.length)
 
         return phrase;
     };
